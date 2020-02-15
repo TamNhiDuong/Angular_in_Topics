@@ -27,7 +27,10 @@
       </ng-template>
 
       <p app-basic-highlight>App basic highligh</p>
-      <p appBetterHighlight>App better highligh</p>
+      <p 
+        appBetterHighlight 
+        [defaultColor]="'transparent'" 
+        [highlightColor]="'pink'">App better highligh</p>
     </div>
   </div>
 </div>
