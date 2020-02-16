@@ -13,9 +13,13 @@ export class AccountComponent {
 
   constructor(
     private accountService: AccountService) {
+      this.accountService.statusAlert.subscribe(
+        (status: string) => alert(status)
+      )
   }
 
   onSetTo(status: string) {
-    this.accountService.updateStatus(this.id, status)
+    this.accountService.updateStatus(this.id, status);
+    this.accountService.statusAlert.emit(status)
   }
 }
