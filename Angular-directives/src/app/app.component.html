@@ -43,6 +43,15 @@
         appBetterHighlight 
         [defaultColor]="'transparent'" 
         [highlightColor]="'pink'">App better highligh</p>
+
+        <div [ngSwitch]="value">
+          <p *ngSwitchCase = '10'>Value is 10</p>
+          <p *ngSwitchCase = '5'>Value is 5</p>
+          <p *ngSwitchDefault>Default value</p>
+        </div>
+        
     </div>
   </div>
 </div>
+
+
