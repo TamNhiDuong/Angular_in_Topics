@@ -21,7 +21,7 @@ export class UserComponent implements OnInit {
         this.user.id = params['id'];
         this.user.name = params['name'];
       }
-    )
-  }
+    )  
+  } 
 
 }
