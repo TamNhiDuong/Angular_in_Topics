@@ -30,8 +30,12 @@ export class ServerComponent implements OnInit {
     )
   }
 
-  //reload(id: number) {
-    //this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'});
-  //}
+  reload(id: number) {
+    this.router.navigate(['/servers', id, 'edit'], {queryParams: {allowEdit: '1'}, fragment: 'loading'});
+  }
+
+  onEdit() {
+    this.router.navigate(['edit'], {relativeTo: this.route})
+  }
 
 }

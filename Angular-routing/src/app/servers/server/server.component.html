@@ -1,3 +1,4 @@
 <h5>{{ server.name }}</h5>
-<p>Server status is {{ server.status }}</p>
+<p>Server status is {{ server.status }} ID is {{server.id}}</p>
 <button class="btn btn-primary" (click)="reload(1)">Reload</button>
+<button class="btn btn-danger" (click)="onEdit()">Edit server</button> 
