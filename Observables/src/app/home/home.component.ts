@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
           if(count >= 2) {
             observer.complete();
           };
-          if (count === 3) {
+          if (count === 100) {
             observer.error(new Error('Error!'))
           }
           count++;
@@ -45,5 +45,6 @@ export class HomeComponent implements OnInit {
   ngOnDestroy(): void {
     this.firstObSubscription.unsubscribe();
   }
+
 
 }
