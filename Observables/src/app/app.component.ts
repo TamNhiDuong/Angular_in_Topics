@@ -16,6 +16,6 @@ export class AppComponent implements OnInit {
     this.activateService.isActivated.subscribe(activateValue => {
       this.activateUser = activateValue;
     })
-    console.log(this.activateUser);
+    
   }
 }
